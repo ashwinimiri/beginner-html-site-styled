@@ -1,9 +1,9 @@
 pipeline {
-    agent { label 'k8s-master' } // Kubernetes master node as Jenkins agent
+    agent { label 'kuberneteMaster' } // Kubernetes master node as Jenkins agent
 
     environment {
         DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials')
-        IMAGE_NAME = 'yourdockerhubusername/yourrepositoryname'
+        IMAGE_NAME = 'ashwinifullstack/beginner-html-site-styled'
     }
 
     triggers {
