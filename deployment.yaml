@@ -1,0 +1,23 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beginner-html-site-deployment
+  labels:
+    app: beginner-html-site
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: beginner-html-site
+  template:
+    metadata:
+      labels:
+        app: beginner-html-site
+    spec:
+      containers:
+      - name: beginner-html-container
+        image: ashwinifullstack/beginner-html-site-styled:latest
+        ports:
+        - containerPort: 99
+
