@@ -11,6 +11,6 @@ spec:
   type: NodePort
   ports:
   - port: 80           # Internal service port
-    targetPort: 99      # Container port
+    targetPort: 80      # Container port
     nodePort: 30010     # Exposed NodePort
 
