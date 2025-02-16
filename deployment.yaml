@@ -18,6 +18,7 @@ spec:
       containers:
       - name: beginner-html-container
         image: ashwinifullstack/beginner-html-site-styled:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 
