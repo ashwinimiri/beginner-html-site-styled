@@ -19,5 +19,5 @@ spec:
       - name: beginner-html-container
         image: ashwinifullstack/beginner-html-site-styled:latest
         ports:
-        - containerPort: 99
+        - containerPort: 80
 
